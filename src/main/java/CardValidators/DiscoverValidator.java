@@ -13,7 +13,7 @@ public class DiscoverValidator implements Validator {
 
 		// check length first
 		if (l >= 16 && l <= 19) {
-			int firstTwoDigits = Integer.valueOf((digits[0] + "" + digits[1]));
+			int firstTwoDigits = Integer.parseInt((digits[0] + "" + digits[1]));
 			
 			// check 64,65 case
 			if ((firstTwoDigits == 64 || firstTwoDigits == 65)) {
@@ -21,7 +21,7 @@ public class DiscoverValidator implements Validator {
 			}
 
 			// check 6011 case
-			int firstFourDigits = Integer.valueOf(firstTwoDigits + "" + digits[2] + "" + digits[3]);
+			int firstFourDigits = Integer.parseInt(firstTwoDigits + "" + digits[2] + "" + digits[3]);
 			if (firstFourDigits == 6011) {
 				return true;
 			}

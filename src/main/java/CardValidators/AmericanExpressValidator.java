@@ -16,7 +16,7 @@ public class AmericanExpressValidator implements Validator {
 		}
 
 		// card starts with 34 or 37
-		int firstTwoDigits = Integer.valueOf((digits[0] + "" + digits[1]));
+		int firstTwoDigits = Integer.parseInt((digits[0] + "" + digits[1]));
 		if (firstTwoDigits == 34 || firstTwoDigits == 37) {
 			return true;
 		}
