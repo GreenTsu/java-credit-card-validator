@@ -1,5 +1,5 @@
 # java-credit-card-validator
-
+[![Build Status](https://travis-ci.org/iqbal-singh/java-credit-card-validator.svg?branch=master)](https://travis-ci.org/iqbal-singh/java-credit-card-validator)
 > A java library for validating credit card numbers.
 
 
